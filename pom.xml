@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>org.kantega.opensource-parent</groupId>
+        <artifactId>opensource-parent</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.kantega.archetypes</groupId>
+    <artifactId>openaksess-project</artifactId>
+    <packaging>maven-archetype</packaging>
+    <name>OpenAksess Project Archetype</name>
+    <version>1.0</version>
+
+    <scm>
+        <connection>scm:svn:https://opensource.kantega.no/svn/openaksess-archetype/trunk</connection>
+    </scm>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.0-alpha-4</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>2.0-alpha-4</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

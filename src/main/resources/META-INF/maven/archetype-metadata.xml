@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="project-parent">
+
+    <requiredProperties>
+        <requiredProperty key="databaseType"/>
+        <requiredProperty key="databaseHost"/>
+        <requiredProperty key="databaseName"/>
+        <requiredProperty key="databaseUsername"/>
+        <requiredProperty key="databasePassword"/>
+    </requiredProperties>
+    <modules>
+        <module id="core" dir="core" name="core" />
+        <module id="webapp" dir="webapp" name="webapp">
+            <fileSets>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/resources</directory>
+                    <includes>
+                        <include>**/*.properties</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/webapp</directory>
+                    <includes>
+                        <include>**/*.jsp</include>
+                        <include>**/*.xml</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/conf</directory>
+                    <includes>
+                        <include>**/*.conf</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/webapp</directory>
+                    <includes>
+                        <include>**/*.gif</include>
+                        <include>**/*.css</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/webapp/WEB-INF/templates/content</directory>
+                    <includes>
+                        <include>**/*.xml</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/webapp/WEB-INF/templates/email</directory>
+                    <includes>
+                        <include>**/*.vm</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
+    </modules>
+</archetype-descriptor>

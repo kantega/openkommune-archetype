@@ -1,0 +1,12 @@
+#foreach ($content in $contentlist)
+$content.getTitle()
+$content.getDescription()
+
+Les hele saken her:
+$baseurl$content.getUrl()
+
+
+#end
+
+--------------
+Enter your own text here
