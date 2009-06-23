@@ -44,4 +44,31 @@
         <aksess.version>6.0</aksess.version>
         <aksess-plugin.version>1.0</aksess-plugin.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>opensource.kantega.no</id>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>http://opensource.kantega.no/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>plugins.opensource.kantega.no</id>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>http://opensource.kantega.no/nexus/content/groups/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    
 </project>
