@@ -6,7 +6,7 @@
     <artifactId>${artifactId}</artifactId>
     <packaging>pom</packaging>
     <version>${version}</version>
-    <name>Maven archetype parent</name>
+    <name>${artifactId} parent</name>
 
     <scm>
         <connection>scm:svn:https://subversion.kantega.no/svn/aksess/projects/project/${artifactId}/trunk</connection>
@@ -42,7 +42,7 @@
 
     <properties>
         <aksess.version>6.0</aksess.version>
-        <aksess-plugin.version>1.0</aksess-plugin.version>
+        <aksess-plugin.version>1.1</aksess-plugin.version>
     </properties>
 
     <repositories>

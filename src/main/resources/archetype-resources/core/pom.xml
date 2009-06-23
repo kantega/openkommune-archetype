@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>${rootArtifactId}-core</artifactId>
     <packaging>jar</packaging>
-    <name>Project Core</name>
+    <name>${artifactId} Core</name>
 
 </project>
