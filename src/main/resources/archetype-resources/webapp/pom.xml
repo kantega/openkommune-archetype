@@ -28,7 +28,7 @@
         <plugins>
             <plugin>
                 <groupId>org.kantega.openaksess</groupId>
-                <artifactId>openaksess-maven-plugin</artifactId>
+                <artifactId>aksess-maven-plugin</artifactId>
                 <version>${symbol_dollar}{aksess-plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
