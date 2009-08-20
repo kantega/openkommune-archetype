@@ -8,10 +8,6 @@
     <version>${version}</version>
     <name>${artifactId} parent</name>
 
-    <scm>
-        <connection>scm:svn:https://subversion.kantega.no/svn/aksess/projects/project/${artifactId}/trunk</connection>
-    </scm>
-
 
     <dependencies>
         <dependency>
