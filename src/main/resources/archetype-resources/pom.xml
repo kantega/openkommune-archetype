@@ -42,7 +42,7 @@
 
     <properties>
         <aksess.version>${aksessVersion}</aksess.version>
-        <aksess-plugin.version>1.3</aksess-plugin.version>
+        <aksess-plugin.version>1.9</aksess-plugin.version>
     </properties>
 
     <repositories>
