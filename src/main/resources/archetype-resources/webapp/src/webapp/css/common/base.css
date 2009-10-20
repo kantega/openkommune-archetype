@@ -34,7 +34,7 @@ blockquote,ul,ol,dl {
 }
 ol,ul,dl {
 	/*bringing lists on to the page with breathing room */
-	margin-left:2em;
+	margin-left:3em;
 }
 ol li {
 	/*giving OL's LIs generated numbers*/
