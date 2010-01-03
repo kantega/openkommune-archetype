@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
+
 <templateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                        xsi:schemaLocation="http://www.kantega.no http://www.kantega.no/aksess/aksess-templateconfig.xsd"
                        xmlns="http://www.kantega.no">
@@ -12,25 +13,25 @@
     <associationCategories>
 
         <associationCategory databaseId="1" id="Global menu">
-            <name>Global menu</name>
+            <name>Hovedmeny</name>
         </associationCategory>
 
         <associationCategory databaseId="2" id="Main column">
-            <name>Main column</name>
+            <name>Midtspalte</name>
         </associationCategory>
 
     </associationCategories>
 
     <documentTypes>
         <documentType databaseId="1" id="News article">
-            <name>News article</name>
+            <name>Nyhet</name>
         </documentType>
     </documentTypes>
 
     <contentTemplates>
 
         <contentTemplate databaseId="1" id="Frontpage">
-            <name>Frontpage</name>
+            <name>Forside</name>
             <templateFile>frontpage.xml</templateFile>
             <associationCategories>
                 <associationCategory id="Global menu"/>
@@ -38,7 +39,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="2" id="Article">
-            <name>Article</name>
+            <name>Artikkel</name>
             <templateFile>article.xml</templateFile>
             <associationCategories>
                 <associationCategory id="Global menu"/>
@@ -46,12 +47,14 @@
             <allowedParentTemplates>
                 <contentTemplate id="Article"/>
                 <contentTemplate id="Frontpage"/>
+                <contentTemplate id="List"/>
+                <contentTemplate id="AlphabeticalList"/>
             </allowedParentTemplates>
         </contentTemplate>
 
         <contentTemplate databaseId="3" id="News archive">
-            <name>News archive</name>
-            <templateFile>news.xml</templateFile>
+            <name>Nyhetsarkiv</name>
+            <templateFile>news-archive.xml</templateFile>
             <associationCategories>
                 <associationCategory id="Main column"/>
             </associationCategories>
@@ -61,7 +64,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="4" id="News article">
-            <name>News article</name>
+            <name>Nyhet</name>
             <templateFile>article.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="News archive"/>
@@ -70,7 +73,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="5" id="Mail subscription">
-            <name>Mail subscription</name>
+            <name>E-post abonnement</name>
             <templateFile>subscription.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Frontpage"/>
@@ -78,7 +81,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="6" id="Search">
-            <name>Search</name>
+            <name>Søk</name>
             <templateFile>search.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Frontpage"/>
@@ -86,7 +89,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="7" id="Site map">
-            <name>Site map</name>
+            <name>Sidekart</name>
             <templateFile>sitemap.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Frontpage"/>
@@ -94,7 +97,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="8" id="Photo album">
-            <name>Photo album</name>
+            <name>Fotoalbum</name>
             <templateFile>photoalbum.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Article"/>
@@ -103,7 +106,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="9" id="Link" contentType="LINK">
-            <name>Link</name>
+            <name>Lenke</name>
             <templateFile>link.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Article"/>
@@ -112,7 +115,7 @@
         </contentTemplate>
 
         <contentTemplate databaseId="10" id="File" contentType="FILE">
-            <name>File</name>
+            <name>Fil</name>
             <templateFile>file.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Article"/>
@@ -121,11 +124,34 @@
         </contentTemplate>
 
         <contentTemplate databaseId="11" id="Poll">
-            <name>Poll</name>
+            <name>Avstemming</name>
             <templateFile>poll.xml</templateFile>
             <allowedParentTemplates>
                 <contentTemplate id="Article"/>
                 <contentTemplate id="Frontpage"/>
+            </allowedParentTemplates>
+        </contentTemplate>
+
+        <contentTemplate databaseId="12" id="List">
+            <name>Liste</name>
+            <templateFile>list.xml</templateFile>
+            <allowedParentTemplates>
+                <contentTemplate id="Article"/>
+                <contentTemplate id="Frontpage"/>
+                <contentTemplate id="List"/>
+            </allowedParentTemplates>
+        </contentTemplate>
+
+        <contentTemplate databaseId="13" id="AlphabeticalList">
+            <name>Alfabetisk liste</name>
+            <templateFile>title-summary.xml</templateFile>
+            <associationCategories>
+                <associationCategory id="Main column"/>
+            </associationCategories>
+            <allowedParentTemplates>
+                <contentTemplate id="Article"/>
+                <contentTemplate id="Frontpage"/>
+                <contentTemplate id="List"/>
             </allowedParentTemplates>
         </contentTemplate>
 
@@ -134,7 +160,7 @@
     <displayTemplates>
 
         <displayTemplate databaseId="1" id="Frontpage">
-            <name>Frontpage</name>
+            <name>Forside</name>
             <view>/WEB-INF/jsp/site/index.jsp</view>
             <contentTemplate id="Frontpage"/>
             <sites>
@@ -143,16 +169,16 @@
         </displayTemplate>
 
         <displayTemplate databaseId="2" id="Article">
-            <name>Article</name>
-            <description>Standard template for publishing article</description>
+            <name>Standard underside</name>
+            <description>Ordinær side med tekst og bilder.</description>
             <view>/WEB-INF/jsp/common/templates/article.jsp</view>
             <contentTemplate id="Article"/>
         </displayTemplate>
 
-        <displayTemplate databaseId="3" id="News archive" allowMultipleUsages="false">
-            <name>News archive</name>
-            <description>Archive for publishing news articles</description>
-            <view>/WEB-INF/jsp/common/templates/news.jsp</view>
+        <displayTemplate databaseId="3" id="News archive" allowMultipleUsages="true">
+            <name>Nyhetsarkiv</name>
+            <description>Samleside for publisering av nyheter</description>
+            <view>/WEB-INF/jsp/common/templates/news-archive.jsp</view>
             <contentTemplate id="News archive"/>
             <controllers>
                 <controller>newsArchiveController</controller>
@@ -160,45 +186,65 @@
         </displayTemplate>
 
         <displayTemplate databaseId="4" id="News article">
-            <name>News article</name>
-            <description>Template for publishing a news article</description>
-            <view>/WEB-INF/jsp/common/templates/news-item.jsp</view>
+            <name>Nyhet</name>
+            <description>Standard nyhetsartikkel. Publiseres under nyhetsarkivet, men benyttes til uttrekk på forsida.</description>
+            <view>/WEB-INF/jsp/common/templates/news-article.jsp</view>
             <contentTemplate id="News article"/>
         </displayTemplate>
 
         <displayTemplate databaseId="5" id="Mail subscription" allowMultipleUsages="false">
-            <name>Mail subscription</name>
-            <description>Template for publishing a page where users can subscribe to newsletter</description>
-            <view>/WEB-INF/jsp/common/templates/abonnement.jsp</view>
+            <name>E-postabonnement</name>
+            <description>Mal som lar brukeren abonnere på oppdateringer i deler av nettstedsstrukturen.</description>
+            <view>/WEB-INF/jsp/common/templates/subscription.jsp</view>
             <contentTemplate id="Mail subscription"/>
         </displayTemplate>
 
         <displayTemplate databaseId="6" id="Search" allowMultipleUsages="false">
-            <name>Search</name>
-            <description>Template for publishing a search page</description>
+            <name>Søk</name>
+            <description>Side for søk og visning av søkeresultat.</description>
             <view>/WEB-INF/jsp/common/templates/search.jsp</view>
             <contentTemplate id="Search"/>
+            <controllers>
+                <controller>aksessSearchController</controller>
+            </controllers>
         </displayTemplate>
 
         <displayTemplate databaseId="7" id="Site map" allowMultipleUsages="false">
-            <name>Site map</name>
-            <description>Template for publishing a site map</description>
+            <name>Sidekart</name>
+            <description>Mal for publisering av sidekart.</description>
             <view>/WEB-INF/jsp/common/templates/sitemap.jsp</view>
             <contentTemplate id="Site map"/>
         </displayTemplate>
 
         <displayTemplate databaseId="8" id="Photo album">
-            <name>Photo album</name>
-            <description>Template where you can select a folder in the mediaarchive to publish a photo album</description>
+            <name>Fotoalbum</name>
+            <description>Mal hvor du kan velge en folder fra multimediearkivet som skal vises som fotogalleri</description>
             <view>/WEB-INF/jsp/common/templates/photoalbum.jsp</view>
             <contentTemplate id="Photo album"/>
         </displayTemplate>
 
         <displayTemplate databaseId="11" id="Poll">
-            <name>Poll</name>
-            <description>Template for publishing a poll</description>
+            <name>Avstemming</name>
+            <description>Mal for publisering av en enkel, flervalgs avstemming.</description>
             <view>/WEB-INF/jsp/common/templates/poll.jsp</view>
             <contentTemplate id="Poll"/>
+        </displayTemplate>
+
+        <displayTemplate databaseId="12" id="List">
+            <name>Liste</name>
+            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare titlen.</description>
+            <view>/WEB-INF/jsp/common/templates/poll.jsp</view>
+            <contentTemplate id="List"/>
+        </displayTemplate>
+
+        <displayTemplate databaseId="13" id="AlphabeticalList">
+            <name>Alfabetisk liste</name>
+            <description>Alfabetisk liste over undersider. Undersidene grupperes etter forbokstav og i toppen av siden er det snarveilenker til hver gruppe med undersider.</description>
+            <view>/WEB-INF/jsp/common/templates/alphabetic-list.jsp</view>
+            <contentTemplate id="AlphabeticalList"/>
+            <controllers>
+                <controller>alphabeticalListController</controller>
+            </controllers>
         </displayTemplate>
 
     </displayTemplates>

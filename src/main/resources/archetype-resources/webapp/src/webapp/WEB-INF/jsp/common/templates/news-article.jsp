@@ -12,6 +12,10 @@
 
         <h1><aksess:getattribute name="title"/></h1>
 
+        <div class="date">
+            <aksess:getmetadata name="publishdate"/>
+        </div>
+
         <aksess:exists name="lead paragraph">
             <div class="leadParagraph">
                 <aksess:getattribute name="lead paragraph"/>
@@ -35,5 +39,5 @@
         </div>
 </kantega:section>
 
-<aksess:include url="/WEB-INF/jsp$SITE/include/design/standard.jsp"/>
 
+<aksess:include url="/WEB-INF/jsp$SITE/include/design/standard.jsp"/>

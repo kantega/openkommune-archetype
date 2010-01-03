@@ -1,0 +1,16 @@
+@import "editor.css";
+
+
+/* Used for accessibility purposes.
+*  Content that should be visible to screen readers etc,
+*  but not normal browsers must be given this class.
+*/
+.hidefromview {
+    position: absolute;
+    left: -9999px;
+}
+
+.article .image {
+    float: right;
+    margin-left: 0.5em;
+}

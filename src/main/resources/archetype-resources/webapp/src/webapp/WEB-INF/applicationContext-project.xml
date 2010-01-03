@@ -16,4 +16,8 @@
         <property name="associationCategory" value="Main column"/>
     </bean>
 
+    <bean id="aksessSearchController" class="no.kantega.publishing.search.control.ContentSearchController">
+        <property name="searchService" ref="searchService"/>
+    </bean>
+
 </beans>

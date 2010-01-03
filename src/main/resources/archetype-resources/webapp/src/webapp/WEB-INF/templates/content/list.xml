@@ -1,22 +1,20 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 <?xml version="1.0" encoding="ISO-8859-1"?>
+
 <template xmlns="http://www.kantega.no" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kantega.no http://www.kantega.no/aksess/aksess-template.xsd">
     <attributes>
-        <attribute name="tittel" type="text" mandatory="true" mapto="title"/>
-        <attribute name="ingress" type="text" mapto="description" maxlength="300"/>
-        <attribute name="visningsvalg" type="list">
+        <attribute name="title" title="Tittel" type="text" mandatory="true" mapto="title"/>
+        <attribute name="lead paragraph" title="Ingress" type="text" mapto="description" maxlength="300"/>
+        <attribute name="display options" title="Visningsvalg" type="list">
             <options>
-                <option value="ingress_bilde">Vis ingress med bilde</option>
-                <option value="ingress">Vis ingress uten bilde</option>
-                <option value="uten">Ikke vis ingress</option>
+                <option value="leadParagraph_image">Vis overskrift, ingress og bilde</option>
+                <option value="leadParagraph">Vis overskrift og ingress</option>
+                <option value="none">Vis bare overskrift</option>
             </options>
         </attribute>
 
-        <attribute name="sortering" type="list">
+        <attribute name="order by" title="Sortering" type="list">
             <options>
-                <option value="publishdate">Publisert dato - Nyeste fï¿½rst</option>
+                <option value="publishdate">Publisert dato - Nyeste først</option>
                 <option value="title">Alfabetisk</option>
                 <option value="priority">Brukerdefinert</option>
             </options>

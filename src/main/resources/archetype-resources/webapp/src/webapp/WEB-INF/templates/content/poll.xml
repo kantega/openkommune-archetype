@@ -1,16 +1,14 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 <?xml version="1.0" encoding="ISO-8859-1"?>
+
 <template xmlns="http://www.kantega.no" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kantega.no http://www.kantega.no/aksess/aksess-template.xsd">
     <attributes>
-        <attribute name="tittel" type="text" mandatory="true" mapto="title"/>
-        <attribute name="ingress" type="text" mapto="description" maxlength="300"/>
-        <attribute name="sporsmal" type="text" title="Spï¿½rsmï¿½l" maxlength="200" mandatory="true"/>
-        <attribute name="linktext" type="text" title="Link til resultat" maxlength="100" default="Vis resultat">
+        <attribute name="title" title="Tittel" type="text" mandatory="true" mapto="title"/>
+        <attribute name="lead paragraph" title="Ingress" type="text" mapto="description" maxlength="300"/>
+        <attribute name="question" title="Spørsmål" type="text" maxlength="200" mandatory="true"/>
+        <attribute name="linktext" title="Lenketekst" type="text" maxlength="100" default="Vis resultater">
             <helptext>
                 <![CDATA[Hvis du skriver noe i dette feltet vil det dukke opp en link sammen med alternativene slik at det blir mulig &aring; se resultatet
-                av avstemmingen uten &aring; ha stemt. Hvis dette feltet er blankt m&aring; man stemme for &aring; kunne se resultatet.]]>                
+                av avstemmingen uten &aring; ha stemt. Hvis dette feltet er blankt m&aring; man stemme for &aring; kunne se resultatet.]]>
             </helptext>
         </attribute>
         <attribute name="alt1" title="Alternativ 1" type="text" maxlength="100" mandatory="true"/>

@@ -1,0 +1,34 @@
+
+//<%@ taglib uri="http://www.kantega.no/aksess/tags/commons" prefix="kantega" %>
+
+
+$(document).ready(function(){
+
+    setSearchValidationListeners();
+
+});
+
+/**
+ * Intercepts submission of the search forms and validates
+ * that the search criteria adhere to a minimum of set of rules:
+ *  - Search string must be at least 3 characters long.
+ */
+function setSearchValidationListeners() {
+    $("#SearchForm").submit(function(e){
+        $(this).find("input:text").each(function(){
+            var errorMsg = "";
+            if ($(this).val().length < 3) {
+                errorMsg += $(this).attr("title") + ' <kantega:label key="errors.search.min3chars" bundle="site"/>\n';
+            }
+            if (errorMsg.length > 0) {
+                errorsContainer = $("#ErrorsContainer");
+                if(errorsContainer.size() > 0) {
+                    errorsContainer.html(errorMsg.replace('\n', '<br>')).show();
+                } else {
+                    alert(errorMsg);
+                }
+                e.preventDefault();
+            }
+        });
+    });
+}

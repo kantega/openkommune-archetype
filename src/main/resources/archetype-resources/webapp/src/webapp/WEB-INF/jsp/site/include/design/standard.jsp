@@ -1,11 +1,3 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
-<%--
-  User: Kristian Lier Seln�s, Kantega AS
-  Date: 18.jan.2007
-  Time: 16:03:13
---%>
 <%@ page contentType="text/html;charset=utf-8" language="java" pageEncoding="iso-8859-1" %>
 <%@ taglib uri="http://www.kantega.no/aksess/tags/aksess" prefix="aksess" %>
 <%@ taglib uri="http://www.kantega.no/aksess/tags/commons" prefix="kantega" %>
@@ -14,21 +6,33 @@
 
 <jsp:include page="include/header.jsp" />
 
-<div id="Hovedmeny">
-    <menu:printlistmenu association="Hovedmeny" depth="4" var="entry" ulclass="menygruppe" liclass="menyinnslag" selectedclass="menyvalgt" openclass="menyapen">
-        <a href="${symbol_dollar}{entry.url}">${symbol_dollar}{entry.title}</a>
-    </menu:printlistmenu>
+<div id="MainMenu">
+    <ul class="hidefromview">
+        <li><a href="#Content"><kantega:label key="accessibility.navigation.content" bundle="site"/></a></li>
+    </ul>
+    <kantega:hassection id="menu" negate="true">
+        <!-- Print menu of content as UL list -->
+        <menu:printlistmenu association="Global menu" depth="4" var="entry" ulclass="group" liclass="item" selectedclass="selected" openclass="open">
+            <a href="${entry.url}">${entry.title}</a>
+        </menu:printlistmenu>
+    </kantega:hassection>
+    <kantega:hassection id="menu">
+        <!-- Display template has custom menu -->
+        <kantega:getsection id="menu"/>
+    </kantega:hassection>
 </div>
 
-<div id="Smulesti">
-    <a href="<aksess:geturl url="${symbol_dollar}SITE"/>"><kantega:label key="breadcrumb.home" bundle="site"/></a>
+<div id="Breadcrumbs">
+    <a href="<aksess:geturl url="$SITE"/>"><kantega:label key="breadcrumb.home" bundle="site"/></a>
     <menu:getnavigationpath>
-        &nbsp;&gt;&nbsp;<a href="${symbol_dollar}{entry.url}">${symbol_dollar}{entry.title}</a>
+        &nbsp;&gt;&nbsp;<a href="${entry.url}">${entry.title}</a>
     </menu:getnavigationpath>
 </div>
 
-<div id="Main column">
-    <kantega:getsection id="innhold"/>
+<div id="Content">
+    <a class="hidefromview" href="#MainMenu"><kantega:label key="accessibility.navigation.menu" bundle="site"/></a>
+    <kantega:getsection id="content"/>
+    <a class="hidefromview" href="#MainMenu"><kantega:label key="accessibility.navigation.menu" bundle="site"/></a>
 </div>
 
 <jsp:include page="include/footer.jsp" />

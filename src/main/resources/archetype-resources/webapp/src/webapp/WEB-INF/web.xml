@@ -7,26 +7,32 @@
 
   <description>@projectname@</description>
 
-  <!-- Use this to override the Spring root context for the project --> 
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/applicationContext-project.xml</param-value>
-  </context-param>
+    <!-- Use this to override the Spring root context for the project -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext-project.xml</param-value>
+    </context-param>
 
 
     <filter>
-      <filter-name>ParamEncodingFilter</filter-name>
-      <filter-class>no.kantega.commons.filter.ParamEncodingFilter</filter-class>
+        <filter-name>ParamEncodingFilter</filter-name>
+        <filter-class>no.kantega.commons.filter.ParamEncodingFilter</filter-class>
     </filter>
 
     <filter-mapping>
-      <filter-name>ParamEncodingFilter</filter-name>
-      <url-pattern>/*</url-pattern>
-    </filter-mapping>    
+        <filter-name>ParamEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <error-page>
-      <error-code>500</error-code>
-      <location>/500.jsp</location>
+        <error-code>500</error-code>
+        <location>/500.jsp</location>
     </error-page>
+
+    <!-- jjs = Dynamic (jsp) JavaScript files -->
+    <servlet-mapping>
+        <servlet-name>jsp</servlet-name>
+        <url-pattern>*.jjs</url-pattern>
+    </servlet-mapping>
 
 </web-app>

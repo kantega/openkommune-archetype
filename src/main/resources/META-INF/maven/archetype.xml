@@ -14,22 +14,19 @@
         <resource>webapp/src/webapp/bitmaps/common/img_link_left.gif</resource>
         <resource>webapp/src/webapp/css/common/base.css</resource>
         <resource>webapp/src/webapp/css/common/reset.css</resource>
-        <resource>webapp/src/webapp/css/site/site.css</resource>
-        <resource>webapp/src/webapp/css/site/standard.css</resource>
-        <resource>webapp/src/webapp/css/site/standard-templates.css</resource>
+        <resource>webapp/src/webapp/css/site/editor.css</resource>
+        <resource>webapp/src/webapp/css/site/default.css</resource>
         <resource>webapp/src/webapp/WEB-INF/applicationContext-project.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/subscription.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/alphabetic-list.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/article.jsp</resource>
-        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/advanced-search.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/poll.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/photoalbum.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/include/poll.jsp</resource>
-        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/include/searchresult.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/list.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/mini/poll.jsp</resource>
-        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/news-item.jsp</resource>
-        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/news.jsp</resource>
+        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/news-article.jsp</resource>
+        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/news-archive.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/sitemap.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/search.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/site/include/design/frontpage.jsp</resource>
@@ -42,7 +39,7 @@
         <resource>webapp/src/webapp/WEB-INF/templates/content/frontpage.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/link.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/list.xml</resource>
-        <resource>webapp/src/webapp/WEB-INF/templates/content/news.xml</resource>
+        <resource>webapp/src/webapp/WEB-INF/templates/content/news-archive.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/poll.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/photoalbum.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/search.xml</resource>
