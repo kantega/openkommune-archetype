@@ -4,6 +4,7 @@
         <resource>core/pom.xml</resource>
         <resource>webapp/pom.xml</resource>
         <resource>webapp/src/conf/aksess-webapp.conf</resource>
+        <resource>webapp/src/webapp/WEB-INF/config/aksess-project.conf</resource>
         <resource>webapp/src/resources/site_en.properties</resource>
         <resource>webapp/src/resources/site_no.properties</resource>
         <resource>webapp/src/webapp/403.jsp</resource>
@@ -16,6 +17,8 @@
         <resource>webapp/src/webapp/css/common/reset.css</resource>
         <resource>webapp/src/webapp/css/site/editor.css</resource>
         <resource>webapp/src/webapp/css/site/default.css</resource>
+        <resource>webapp/src/webapp/js/common/jquery-1.3.2.min.js</resource>
+        <resource>webapp/src/webapp/js/site/default.jjs</resource>
         <resource>webapp/src/webapp/WEB-INF/applicationContext-project.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/subscription.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/alphabetic-list.jsp</resource>

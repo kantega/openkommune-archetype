@@ -32,11 +32,19 @@
                         <include>**/*.conf</include>
                     </includes>
                 </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/webapp/WEB-INF/config</directory>
+                    <includes>
+                        <include>**/*.conf</include>
+                    </includes>
+                </fileSet>
                 <fileSet encoding="UTF-8">
                     <directory>src/webapp</directory>
                     <includes>
                         <include>**/*.gif</include>
                         <include>**/*.css</include>
+                        <include>**/*.js</include>
+                        <include>**/*.jjs</include>
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
@@ -46,7 +54,7 @@
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
-                    <directory>src/webapp/WEB-INF/templates/email</directory>
+                    <directory>src/webapp/WEB-INF/templates/mail</directory>
                     <includes>
                         <include>**/*.vm</include>
                     </includes>
