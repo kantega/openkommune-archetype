@@ -232,8 +232,8 @@
 
         <displayTemplate databaseId="12" id="List">
             <name>Liste</name>
-            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare titlen.</description>
-            <view>/WEB-INF/jsp/common/templates/poll.jsp</view>
+            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare tittelen.</description>
+            <view>/WEB-INF/jsp/common/templates/list.jsp</view>
             <contentTemplate id="List"/>
         </displayTemplate>
 
