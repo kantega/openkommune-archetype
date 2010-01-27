@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="<aksess:geturl url="/css$SITE/default.css"/>" media="all">
     <link rel="stylesheet" type="text/css" href="<aksess:geturl url="/css$SITE/print.css"/>" media="print">
 
-    <script type="text/javascript" src="<aksess:geturl url="/js/common/jquery-1.3.2.min.js"/>"></script>
+    <script type="text/javascript" src="<aksess:geturl url="/js/common/jquery-1.4.1.min.js"/>"></script>
     <script type="text/javascript" src="<aksess:geturl url="/js$SITE/default.jjs"/>"></script>
     <kantega:hassection id="head">
         <kantega:getsection id="head"/>

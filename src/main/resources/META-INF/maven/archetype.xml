@@ -17,7 +17,7 @@
         <resource>webapp/src/webapp/css/common/reset.css</resource>
         <resource>webapp/src/webapp/css/site/editor.css</resource>
         <resource>webapp/src/webapp/css/site/default.css</resource>
-        <resource>webapp/src/webapp/js/common/jquery-1.3.2.min.js</resource>
+        <resource>webapp/src/webapp/js/common/jquery-1.4.1.min.js</resource>
         <resource>webapp/src/webapp/js/site/default.jjs</resource>
         <resource>webapp/src/webapp/WEB-INF/applicationContext-project.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/subscription.jsp</resource>
