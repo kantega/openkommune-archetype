@@ -14,9 +14,9 @@
     <h1><aksess:getattribute name="title"/></h1>
 
     <aksess:exists name="lead paragraph">
-        <div class="leadParagraph">
+        <p class="leadParagraph">
             <aksess:getattribute name="lead paragraph"/>
-        </div>
+        </p>
     </aksess:exists>
 
     <aksess:setvariable attribute="depth" name="depth"/>

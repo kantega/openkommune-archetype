@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><archetype>
-    <id>project-parent</id>
+    <id>opensource-parent</id>
     <resources>
         <resource>core/pom.xml</resource>
+        <resource>core/src/main/java/com/mycompany/DefaultContentCreatorStandard.java</resource>
+        
         <resource>webapp/pom.xml</resource>
         <resource>webapp/src/conf/aksess-webapp.conf</resource>
         <resource>webapp/src/webapp/WEB-INF/config/aksess-project.conf</resource>
-        <resource>webapp/src/resources/site_en.properties</resource>
-        <resource>webapp/src/resources/site_no.properties</resource>
+        <resource>webapp/src/main/resources/defaultBackgroundImage.png</resource>
+        <resource>webapp/src/main/resources/boston_city_flow.png</resource>
+        <resource>webapp/src/main/resources/costa_rican_frog.png</resource>
+        <resource>webapp/src/main/resources/my_logo.png</resource>
+        <resource>webapp/src/main/resources/site_en.properties</resource>
+        <resource>webapp/src/main/resources/site_no.properties</resource>
         <resource>webapp/src/webapp/403.jsp</resource>
         <resource>webapp/src/webapp/404.jsp</resource>
         <resource>webapp/src/webapp/500.jsp</resource>
         <resource>webapp/src/webapp/bitmaps/common/img_poll.gif</resource>
         <resource>webapp/src/webapp/bitmaps/common/img_link_right.gif</resource>
         <resource>webapp/src/webapp/bitmaps/common/img_link_left.gif</resource>
+        <resource>webapp/src/webapp/bitmaps/site/backgroundFooter.png</resource>
+        <resource>webapp/src/webapp/bitmaps/site/backgroundMenuLink.png</resource>
         <resource>webapp/src/webapp/css/common/base.css</resource>
         <resource>webapp/src/webapp/css/common/reset.css</resource>
         <resource>webapp/src/webapp/css/site/editor.css</resource>

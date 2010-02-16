@@ -31,9 +31,9 @@
         <c:otherwise>
 
             <aksess:exists name="lead paragraph">
-                <div class="leadParagraph">
+                <p class="leadParagraph">
                     <aksess:getattribute name="lead paragraph"/>
-                </div>
+                </p>
             </aksess:exists>
 
 

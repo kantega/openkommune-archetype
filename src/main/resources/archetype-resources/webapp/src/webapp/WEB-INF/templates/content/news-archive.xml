@@ -12,7 +12,7 @@
                 <option value="true">Ja</option>
                 <option value="false">Nei</option>
             </options>
-            <helptext><![CDATA[Indikerer om det skal v&aelig;re mulig � s&oslash;ke opp arkiverte nyheter.]]></helptext>
+            <helptext><![CDATA[Indikerer om det skal v&aelig;re mulig &aring; s&oslash;ke opp arkiverte nyheter.]]></helptext>
         </attribute>
     </attributes>
 </template>

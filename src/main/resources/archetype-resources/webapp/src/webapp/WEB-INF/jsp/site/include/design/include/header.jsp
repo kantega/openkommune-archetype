@@ -20,3 +20,10 @@
     </kantega:hassection>
 </head>
 <body<kantega:hassection id="bodyclass"> class="<kantega:getsection id="bodyclass"/>"</kantega:hassection>>
+
+    <div id="header">
+        <div class="inner">
+            <div class="date"><aksess:getdate /></div>
+            <span class="title"><kantega:getsection id="title" /></span> <aksess:abbreviate maxsize="50"><aksess:getattribute name="description" /></aksess:abbreviate>
+        </div>
+    </div>

@@ -17,9 +17,9 @@
         </div>
 
         <aksess:exists name="lead paragraph">
-            <div class="leadParagraph">
+            <p class="leadParagraph">
                 <aksess:getattribute name="lead paragraph"/>
-            </div>
+            </p>
         </aksess:exists>
 
         <div class="runningText">
@@ -28,7 +28,7 @@
                 <div class="image">
                     <aksess:getattribute name="image" width="200" height="200"/>
                     <aksess:exists name="caption">
-                    <div class="caption">
+                    <div class="caption" style="width: 200px">
                         <aksess:getattribute name="caption"/>
                     </div>
                     </aksess:exists>

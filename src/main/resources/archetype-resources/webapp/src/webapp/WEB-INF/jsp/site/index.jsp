@@ -14,7 +14,7 @@
         <div class="article">
             <aksess:link collection="news"><aksess:getattribute name="image" width="100" height="100" collection="news"/></aksess:link>
             <h3><aksess:link collection="news"><aksess:getattribute name="title" collection="news"/></aksess:link></h3>
-            <div class="leadParagraph">
+            <p class="leadParagraph">
                 <aksess:getattribute name="description" collection="news"/>
                 <aksess:link collection="news">Les</aksess:link>
             </div>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>        
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
     <parent>
         <groupId>${groupId}</groupId>
         <artifactId>${rootArtifactId}</artifactId>
@@ -10,10 +9,9 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>${rootArtifactId}-${artifactId}</artifactId>
     <packaging>aksess-war</packaging>
-    <name>${artifactId}webapp</name>
+    <name>${rootArtifactId} webapp</name>
 
     <dependencies>
-
         <dependency>
             <groupId>${groupId}</groupId>
             <artifactId>${rootArtifactId}-core</artifactId>
@@ -33,9 +31,7 @@
             <version>${aksess.version}</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
-
 
     <build>
         <plugins>
@@ -55,7 +51,26 @@
                     <warSourceDirectory>${basedir}/src/webapp</warSourceDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.simplericity.jettyconsole</groupId>
+                <artifactId>jetty-console-maven-plugin</artifactId>
+                <version>1.25</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>createconsole</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <additionalDependencies>
+                        <additionalDependency>
+                            <artifactId>jetty-console-jsp-plugin</artifactId>
+                        </additionalDependency>
+                    </additionalDependencies>
+                    <backgroundImage>${basedir}/src/main/resources/defaultBackgroundImage.png</backgroundImage>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>

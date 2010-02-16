@@ -20,4 +20,5 @@
         <property name="searchService" ref="searchService"/>
     </bean>
 
+    <bean id="defaultContentCreator" class="${groupId}.DefaultContentCreatorStandard" />
 </beans>

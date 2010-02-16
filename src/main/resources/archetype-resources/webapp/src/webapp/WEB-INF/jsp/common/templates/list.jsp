@@ -14,9 +14,9 @@
     <h1><aksess:getattribute name="title"/></h1>
 
     <aksess:exists name="lead paragraph">
-        <div class="leadParagraph">
+        <p class="leadParagraph">
             <aksess:getattribute name="lead paragraph"/>
-        </div>
+        </p>
     </aksess:exists>
 
 
@@ -34,9 +34,9 @@
         <div class="listelement">
             <h3><aksess:link collection="list"><aksess:getattribute name="title" collection="list"/></aksess:link></h3>
             <aksess:ifequals name="display options" value="leadParagraph">
-                <div class="leadParagraph">
+                <p class="leadParagraph">
                     <aksess:getattribute name="lead paragraph" collection="list"/>
-                </div>
+                </p>
             </aksess:ifequals>
             <aksess:ifequals name="display options" value="leadParagraph_image">
                 <aksess:exists name="image" collection="list">
@@ -44,9 +44,9 @@
                         <aksess:getattribute name="image" collection="list" width="100"/>
                     </div>
                 </aksess:exists>
-                <div class="leadParagraph">
+                <p class="leadParagraph">
                     <aksess:getattribute name="lead paragraph" collection="list"/>
-                </div>
+                </p>
             </aksess:ifequals>
             <div class="clear"></div>
         </div>

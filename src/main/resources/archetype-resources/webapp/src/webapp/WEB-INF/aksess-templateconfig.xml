@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-
 <templateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                        xsi:schemaLocation="http://www.kantega.no http://www.kantega.no/aksess/aksess-templateconfig.xsd"
                        xmlns="http://www.kantega.no">
 
     <sites>
         <site databaseId="1" id="site" alias="/site/">
-            <name>Main site</name>
+            <name>Nettsted</name>
         </site>
     </sites>
 
     <associationCategories>
-
         <associationCategory databaseId="1" id="Global menu">
             <name>Hovedmeny</name>
         </associationCategory>
@@ -19,7 +17,6 @@
         <associationCategory databaseId="2" id="Main column">
             <name>Midtspalte</name>
         </associationCategory>
-
     </associationCategories>
 
     <documentTypes>
@@ -29,7 +26,6 @@
     </documentTypes>
 
     <contentTemplates>
-
         <contentTemplate databaseId="1" id="Frontpage">
             <name>Forside</name>
             <templateFile>frontpage.xml</templateFile>
@@ -154,11 +150,9 @@
                 <contentTemplate id="List"/>
             </allowedParentTemplates>
         </contentTemplate>
-
     </contentTemplates>
 
     <displayTemplates>
-
         <displayTemplate databaseId="1" id="Frontpage">
             <name>Forside</name>
             <view>/WEB-INF/jsp/site/index.jsp</view>
@@ -232,8 +226,8 @@
 
         <displayTemplate databaseId="12" id="List">
             <name>Liste</name>
-            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare tittelen.</description>
-            <view>/WEB-INF/jsp/common/templates/list.jsp</view>
+            <description>Mal som lister ut sine undersider i midtspalten. Du kan velge å vise tittelen og ingressen fra hver underside eller bare titlen.</description>
+            <view>/WEB-INF/jsp/common/templates/liste.jsp</view>
             <contentTemplate id="List"/>
         </displayTemplate>
 
@@ -246,7 +240,5 @@
                 <controller>alphabeticalListController</controller>
             </controllers>
         </displayTemplate>
-
     </displayTemplates>
-
 </templateConfiguration>
