@@ -19,6 +19,7 @@
         <resource>webapp/src/webapp/bitmaps/common/img_poll.gif</resource>
         <resource>webapp/src/webapp/bitmaps/common/img_link_right.gif</resource>
         <resource>webapp/src/webapp/bitmaps/common/img_link_left.gif</resource>
+        <resource>webapp/src/webapp/bitmaps/common/mandatory.png</resource>
         <resource>webapp/src/webapp/bitmaps/site/backgroundFooter.png</resource>
         <resource>webapp/src/webapp/bitmaps/site/backgroundMenuLink.png</resource>
         <resource>webapp/src/webapp/css/common/base.css</resource>
@@ -31,6 +32,7 @@
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/subscription.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/alphabetic-list.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/article.jsp</resource>
+        <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/form.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/poll.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/photoalbum.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/jsp/common/templates/include/poll.jsp</resource>
@@ -47,6 +49,7 @@
         <resource>webapp/src/webapp/WEB-INF/jsp/site/index.jsp</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/article.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/file.xml</resource>
+        <resource>webapp/src/webapp/WEB-INF/templates/content/form.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/frontpage.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/link.xml</resource>
         <resource>webapp/src/webapp/WEB-INF/templates/content/list.xml</resource>

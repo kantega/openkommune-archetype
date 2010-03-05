@@ -206,3 +206,50 @@ hr {
 #footer a {
     font-weight: bold;
 }
+
+/* Forms */
+
+.formElement .heading label {
+    font-weight: bold;
+}
+
+.formElement  {
+    padding-bottom: 15px;
+    margin-right:10px;
+}
+
+
+.formElement div.checkbox div, .formElement div.radio div {
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+div.error input, div.error textarea, div.error select, div.error div.inputs label {
+    background-color: #FEDFDD;
+}
+
+div.mandatory .heading label {
+    background: url("../../bitmaps/common/mandatory.png") right center no-repeat;
+    padding-right: 20px;
+}
+
+div.nobreak {
+    float:left;
+}
+
+.formError, .inputError {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #C80104;
+}
+
+div#form_Error{
+    color: #C80104;
+    margin-bottom:5px;
+}
+
+
+div.formElement label{
+    display: inline;
+}

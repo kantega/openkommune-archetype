@@ -150,6 +150,18 @@
                 <contentTemplate id="List"/>
             </allowedParentTemplates>
         </contentTemplate>
+
+        <contentTemplate databaseId="14" id="Form">
+            <name>Skjema</name>
+            <templateFile>form.xml</templateFile>
+            <allowedParentTemplates>
+                <contentTemplate id="Article"/>
+                <contentTemplate id="AlphabeticalList"/>
+                <contentTemplate id="Frontpage"/>
+                <contentTemplate id="List"/>
+            </allowedParentTemplates>
+        </contentTemplate>
+
     </contentTemplates>
 
     <displayTemplates>
@@ -240,5 +252,19 @@
                 <controller>alphabeticalListController</controller>
             </controllers>
         </displayTemplate>
+
+        <displayTemplate databaseId="14" id="Form">
+            <name>Skjema</name>
+            <description>
+                Denne malen lar deg bygge opp et skjema med felter, slik som tekst, radioknapper, nedtrekkslister osv.
+                Når en besøkende fyller ut skjemaet sendes det en e-post til en adresse du kan angi i malen.
+            </description>
+            <view>/WEB-INF/jsp/common/templates/form.jsp</view>
+            <contentTemplate id="Form"/>
+            <controllers>
+                <controller>aksessSaveFormSubmissionController</controller>
+            </controllers>
+        </displayTemplate>
+
     </displayTemplates>
 </templateConfiguration>
